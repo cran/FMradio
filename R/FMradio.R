@@ -14,8 +14,8 @@
 ##             Amsterdam, the Netherlands
 ## Email:	     cf.peeters@vumc.nl
 ##
-## Version: 1.1
-## Last Update:	29/04/2019
+## Version: 1.1.1
+## Last Update:	16/12/2019
 ## Description:	Pipeline (support) for prediction with radiomic data compression
 ##
 ################################################################################
@@ -450,7 +450,7 @@ subSet <- function(X, Rf){
   # require("Biobase")
   
   # Checks
-  if (class(X) != "matrix" & class(X) != "ExpressionSet"){
+  if (!inherits(X, "matrix") & !inherits(X, "ExpressionSet")){
     stop("Input (X) should be either of class 'matrix' or 'ExpressionSet'")
   }
   if (!is.matrix(Rf)){
@@ -461,11 +461,11 @@ subSet <- function(X, Rf){
   }
   
   # Filter
-  if (class(X) == "matrix"){
+  if (inherits(X, "matrix")){
     These <- which(colnames(X) %in% colnames(Rf))
     return(X[,These])
   }
-  if (class(X) == "ExpressionSet"){
+  if (inherits(X, "ExpressionSet")){
     These <- which(featureNames(X) %in% colnames(Rf))
     return(X[These,])
   }
@@ -1288,10 +1288,10 @@ autoFMradio <- function(X, t = .95, fold = 5, GB = 1, type = "thomson",
   # require("expm")
   
   # Checks
-  if (class(X) != "matrix" & class(X) != "ExpressionSet"){
+  if (!inherits(X, "matrix") & !inherits(X, "ExpressionSet")){
     stop("Input (X) should be either of class 'matrix' or 'ExpressionSet'")
   }
-  if (class(X) == "ExpressionSet"){
+  if (inherits(X, "ExpressionSet")){
     X <- t(exprs(X))
   }
   if (class(t) != "numeric"){
