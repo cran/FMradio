@@ -30,6 +30,7 @@ The function returns an object of class \code{list}:
 \item{$Loadings}{A matrix of class \code{loadings} representing the loadings matrix in which in which each element \eqn{\lambda_{jk}} is the loading of the \eqn{j}th feature on the \eqn{k}th latent factor.}
 \item{$Uniqueness}{A \code{matrix} representing the diagonal matrix carrying the unique variances.}
 \item{$rotmatrix}{A \code{matrix} representing the Varimax rotation matrix.}
+The \code{$rotmatrix} slot is only present when \code{m} is larger than 1.
 }
 \references{
 Joreskog, K.G (1967). Some contributions to maximum likelihood factor analysis. Psychometrika,
@@ -42,7 +43,7 @@ Peeters, C.F.W. \emph{et al.} (2019). Stable prediction with radiomics data.
 \href{https://arxiv.org/abs/1903.11696}{arXiv:1903.11696 [stat.ML]}.
 }
 \author{
-Carel F.W. Peeters <cf.peeters@vumc.nl>
+Carel F.W. Peeters <carel.peeters@wur.nl>
 }
 \note{
 \itemize{
