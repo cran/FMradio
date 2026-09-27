@@ -1,9 +1,9 @@
-952177b66edb4232690d89da87246df9 *DESCRIPTION
+a132cdc24d29f41b388f9cda8c32e709 *DESCRIPTION
 0506f3adecbc18d581906faaf02b5bf4 *NAMESPACE
 49e0d0c3990ec6e07a904458964c3ca4 *R/FMradio.R
-3a098921d08bc62dcab2d27b06759108 *README.md
+3f3b329a7f3e537eb9b815390bb7588b *README.md
 8ed9765f21d5cbd8e7a5f30e2dd808cd *inst/FMradioLOGO.png
-eba6f798e4ec31b8f82e73c42ac15fdc *inst/NEWS.Rd
+8b3fc3c1afcbef84ea67bac6ea8afd9b *inst/NEWS.Rd
 11eec1aded0c75c9bd71c4a889c547a8 *man/FAsim.Rd
 e14b5b455ddd348249482363c6bb7d29 *man/FMradio-package.Rd
 716a4d19d670f658e4e2bb5590a37bdd *man/RF.Rd
@@ -12,11 +12,11 @@ e14b5b455ddd348249482363c6bb7d29 *man/FMradio-package.Rd
 dfda442617ca3ec2266e2a87a0aef85d *man/autoFMradio.Rd
 401404762178df161516cffc0a72bfe4 *man/dimGB.Rd
 1fe1729aeb3d7020f69e40464ea34c02 *man/dimIC.Rd
-621a49f7613914157637acfa7c28eb66 *man/dimLRT.Rd
+df14fe9cb1a44d797aaf40f7691b2053 *man/dimLRT.Rd
 23f42c3de8994d168f3a94d2409c5b8e *man/dimVAR.Rd
 8761cbfd403cdfb7483f9578508d2c13 *man/facSMC.Rd
 892eace192076073a1a034510980b433 *man/facScore.Rd
 8d62eacac489f997dbe25b12c217148c *man/mlFA.Rd
-31bf7b81e85598dcd134173f0194db1c *man/radioHeat.Rd
+4dd980c948020e15c8b6e97e7ba782e8 *man/radioHeat.Rd
 87f48dec0dd6cff66013edf23d5452cd *man/regcor.Rd
 52887da4bd7d036a84f319399d69fa29 *man/subSet.Rd
